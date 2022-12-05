@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+.btnWrapper{
+    margin:0 40px 0 0;
+}
+button{
+    border:none;
+    border-radius: 6px;
+    box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+    outline: none;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    padding:8px 16px;
+    line-height: 20px;
+   
+}
+
+.default{
+    background: #E0E0E0;
+    color:#3F3F3F;
+    font-size: 14px;
+    text-align: center;
+}
+.default:disabled,.default:disabled:hover{
+    color: #9E9E9E;
+    background: #E0E0E0;
+}
+.default:hover,.default:focus{
+    background: #AEAEAE;
+}
+
+.outline{
+    background-color: initial;
+    color: #3D5AFE;
+    border:1px solid #3D5AFE;
+    box-shadow: none;
+}
+.outline:disabled,.outline:disabled:hover{
+    color: #9E9E9E;
+    border:1px solid #E0E0E0;
+}
+.outline:hover,.outline:focus{
+    background: rgba(41, 98, 255, 0.1);
+}
+
+.text{
+    border:none;
+    background-color: initial;
+    color: #3D5AFE;
+    box-shadow: none;
+}
+.text:disabled,.text:disabled:hover{
+    color: #9E9E9E;
+    background-color: initial;
+}
+.text:hover,.text:focus{
+    background: rgba(41, 98, 255, 0.1);
+}
+.disableShadow{
+    box-shadow: none;
+}
+.material-icons{
+    display: inline-flex;
+    vertical-align: top !important;
+    padding:0 3px;
+}
+
+.sm{
+    font-size: 14px;
+    padding:6px 12px;
+}
+.md{
+    font-size: 14px;
+    padding:8px 16px;
+}
+.lg{
+    font-size: 14px;
+    padding:11px 22px;
+}
+
+.primary{
+    background-color:#3D5AFE;
+    color: #FFFFFF;
+}
+.primary:hover,.primary:focus{
+    background: #0039CB;
+}
+
+.secondary{
+    color: #FFFFFF;
+    background: #455A64;
+}
+.secondary:hover,.secondary:focus{
+    background: #1C313A;
+}
+.danger{
+    color: #FFFFFF;
+    background: #D32F2F;
+}
+.danger:hover,.danger:focus{
+    background: #9A0007;
+}
+.line{
+    font-size:14px;
+    font-family: 'Ubuntu Mono';
+}
+
+@media screen and (max-width:1199px){
+    .btnWrapper{
+        margin:10px 20px 10px 0;
+    }
+ }
