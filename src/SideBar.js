@@ -3,7 +3,7 @@ import classes from "./SideBar.module.css";
 export default function SideBar(){
     let sidebarElements=['colors','typography','spaces','buttons','inputs','grid'];
     let sidebarUI=sidebarElements.map(element=>{
-       return element=="buttons"?<li className={classes.selected}>{element}</li>:<li className={classes.list}>{element}</li>;
+       return element==="buttons"?<li className={classes.selected}>{element}</li>:<li className={classes.list}>{element}</li>;
     })
     return (
         <div className={classes.sidebar}>
