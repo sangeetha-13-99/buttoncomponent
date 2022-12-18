@@ -1,7 +1,6 @@
 import classes from "./Button.module.css";
 
 export default function Button({variant,size,color,startIcon,endIcon,disableShadow,disabled,name}){
-console.log(name)
     let button=`<Button 
         ${variant ? 'variant="'+variant+'"':''}
         ${size ? 'size="'+size+'"':''}

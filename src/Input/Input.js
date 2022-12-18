@@ -1,4 +1,3 @@
-
 import styled,{css} from "styled-components";
 const OuterWrapper=styled.div`
     margin:0 40px 0 0;
@@ -78,7 +77,7 @@ const InputWrapper=styled.div`
                 border: 1px solid #E0E0E0;
             }
     `)}
-    ${(props)=> (props.size=="sm" && css `
+    ${(props)=> (props.size==="sm" && css `
          & input{
              padding:10px 12px;
          }`)||
@@ -169,10 +168,10 @@ export default function Input(props){
             <InputWrapper {...props}>
                     {props.startIcon  && <i className="icon-left">{props.startIcon}</i>}
                     {!props.multiline &&
-                        <InputElement disabled={props.disabled} value={props.value} placeholder={!props.value?'Placeholder':''}/>
+                        <InputElement disabled={props.disabled} defaultValue={props.value} placeholder={!props.value?'Placeholder':''}/>
                     }
                     {props.multiline &&
-                        <TextElement rows={props.rows}  cols={props.cols}  placeholder={!props.value?'Placeholder':''} disabled={props.disabled} value={props.value} ></TextElement>
+                        <TextElement rows={props.rows}  cols={props.cols}  placeholder={!props.value?'Placeholder':''} disabled={props.disabled} defaultValue={props.value}></TextElement>
                     }
                     {props.endIcon && <i className="icon-right">{props.endIcon}</i>}
                     <label>Label</label>
