@@ -1,13 +1,17 @@
 import './App.css';
 import SideBar from "./SideBar";
 import Main from "./Main";
-import React from 'react';
+import React,{useState} from 'react';
 
 function App() {
+  const [showComponent,setShowComponent]=useState('buttons');
+  function sideBarClickHandler(event){
+    setShowComponent(event.target.textContent);
+  }
   return(
     <div className='App'>
-      <SideBar/>
-      <Main/>
+      <SideBar onClick={sideBarClickHandler} active={showComponent}/>
+      <Main heading={showComponent}/>
     </div>
   )
 }

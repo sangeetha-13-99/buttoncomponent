@@ -33,6 +33,7 @@ export default function ButtonGroup(){
                     <Button color="danger" />
                 </div>
             </>
+            
         </div>
     )
 }
